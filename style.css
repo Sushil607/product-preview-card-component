@@ -93,6 +93,7 @@ h1{
     padding: 20px 22px;
     background-color: var(--white);
     border-radius: 0px 0px 10px 10px;
+        
 }
 
 .description .price-container{
@@ -129,3 +130,36 @@ h1{
 .addToCartBtn:hover{
     background-color: #1A4031;
 }
+
+/**
+* ! Media Queries
+**/
+
+@media(min-width:676px){
+
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .preview-card {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        max-width: 60%;
+        height: 450px;
+    }
+
+    .showcase{
+        border-radius: 10px 0px 0px 10px;
+        background: url(./images/image-product-desktop.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .description{
+        border-radius: 0px 10px 10px 0px;
+    }
+}
+
